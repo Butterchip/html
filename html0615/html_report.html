@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>연습문제</title>
+
+    </head>
+    <body>
+        <h2>회원 정보</h2>
+        <form action="" method="">
+        <hr>
+            <fieldset>
+                <legend>인적사항</legend>
+                <label for="name">이 름</label> : <input type="text" name="name" placeholder="ID 입력요망" id="name"><br>
+                <label for="number">주민번호</label> : <input type="text" name="number" id="number">-<input type="text" name="number"><br>
+                국 적 : 
+                <select name="country">
+                    <option value="Korea">내국인(대한민국)</option>
+                    <option value="Others">외국인(기타)</option>
+                </select>
+                <br>
+                취득 자격증 : 
+                <select name="certificate">
+                    <option value="Craftsman Information Processing">정보처리기사</option><br><br>
+
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>성별 & 학년</legend>
+                성별 : <input type="radio" name="gender" id="male"> <label for="male">남성</label>
+                <input type="radio" name="gender" id="female"> <label for="female">여성</label><br>
+                학년 : <input type="radio" name="year" id="grade1"> <label for="grade1">1학년</label>
+                <input type="radio" name="year" id="grade2" checked> <label for="grade2">2학년</label>
+                <input type="radio" name="year" id="grade3"> <label for="grade3">3학년</label>
+                <input type="radio" name="year" id="grade4"> <label for="grade4">4학년</label>            
+            </fieldset>
+        </form>
+            <fieldset>
+                <legend>취미</legend>
+                <input type="checkbox" name="hobby" id="ho1"> <label for="ho1">독서</label>
+                <input type="checkbox" name="hobby" id="ho2"> <label for="ho2">바둑</label>
+                <input type="checkbox" name="hobby" id="ho3"> <label for="ho3">골프</label>
+                <input type="checkbox" name="hobby" id="ho4"> <label for="ho4">등산</label>
+                <input type="checkbox" name="hobby" id="ho5"> <label for="ho5">여행</label>
+                <input type="checkbox" name="hobby" id="ho6"> <label for="ho6">기타</label>
+            </fieldset>
+            <fieldset>
+                <legend>메모사항</legend>
+                <input type="text" name="memo" placeholder="메모글을 남겨 주세요" id="memo" size="80">
+
+            </fieldset>
+            <br><br>
+            <form action="" method="post">
+            첨부 서류 : <input type="file" name="file"><br>
+            <hr>
+            <input type="submit" value="저장하기">
+            <input type="reset" value="다시 입력하기">
+            </form>
+    </body>
+</html>
